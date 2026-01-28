@@ -2,95 +2,116 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* Sistema POS - Tema Estilo Eleventa */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Colores principales estilo eleventa */
+    --background: 220 14% 96%;
+    --foreground: 220 30% 15%;
 
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 220 30% 15%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 220 30% 15%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Azul principal estilo eleventa */
+    --primary: 213 80% 35%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Gris secundario */
+    --secondary: 220 14% 90%;
+    --secondary-foreground: 220 30% 25%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 220 14% 92%;
+    --muted-foreground: 220 10% 45%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    /* Azul claro para acentos */
+    --accent: 213 70% 92%;
+    --accent-foreground: 213 80% 25%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    /* Rojo para destructivo */
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    /* Éxito - verde */
+    --success: 142 76% 36%;
+    --success-foreground: 0 0% 100%;
 
-    --radius: 0.5rem;
+    /* Advertencia - amarillo */
+    --warning: 45 93% 47%;
+    --warning-foreground: 0 0% 0%;
 
-    --sidebar-background: 0 0% 98%;
+    --border: 220 14% 85%;
+    --input: 220 14% 85%;
+    --ring: 213 80% 35%;
 
-    --sidebar-foreground: 240 5.3% 26.1%;
+    --radius: 0.375rem;
 
-    --sidebar-primary: 240 5.9% 10%;
+    /* Sidebar */
+    --sidebar-background: 213 80% 35%;
+    --sidebar-foreground: 0 0% 100%;
+    --sidebar-primary: 0 0% 100%;
+    --sidebar-primary-foreground: 213 80% 35%;
+    --sidebar-accent: 213 70% 40%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 213 70% 30%;
+    --sidebar-ring: 0 0% 100%;
 
-    --sidebar-primary-foreground: 0 0% 98%;
-
-    --sidebar-accent: 240 4.8% 95.9%;
-
-    --sidebar-accent-foreground: 240 5.9% 10%;
-
-    --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    /* Colores para módulos */
+    --module-sales: 213 80% 35%;
+    --module-credits: 25 95% 53%;
+    --module-products: 142 76% 36%;
+    --module-inventory: 280 65% 55%;
+    --module-purchases: 45 93% 47%;
+    --module-reports: 0 72% 51%;
+    --module-config: 220 14% 50%;
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
+    --background: 220 20% 12%;
+    --foreground: 220 14% 96%;
 
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
+    --card: 220 20% 15%;
+    --card-foreground: 220 14% 96%;
 
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 220 20% 15%;
+    --popover-foreground: 220 14% 96%;
 
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
+    --primary: 213 80% 50%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 220 20% 22%;
+    --secondary-foreground: 220 14% 90%;
 
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
+    --muted: 220 20% 18%;
+    --muted-foreground: 220 14% 60%;
 
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
+    --accent: 213 60% 25%;
+    --accent-foreground: 213 80% 85%;
 
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 72% 45%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --success: 142 60% 40%;
+    --success-foreground: 0 0% 100%;
+
+    --warning: 45 80% 50%;
+    --warning-foreground: 0 0% 0%;
+
+    --border: 220 20% 25%;
+    --input: 220 20% 25%;
+    --ring: 213 80% 50%;
+
+    --sidebar-background: 213 60% 20%;
+    --sidebar-foreground: 0 0% 100%;
+    --sidebar-primary: 0 0% 100%;
+    --sidebar-primary-foreground: 213 80% 35%;
+    --sidebar-accent: 213 50% 30%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 213 50% 25%;
+    --sidebar-ring: 0 0% 100%;
   }
 }
 
@@ -102,4 +123,66 @@ All colors MUST be HSL.
   body {
     @apply bg-background text-foreground;
   }
+}
+
+@layer components {
+  /* Estilos para botones de función (F1, F2, etc.) */
+  .function-key {
+    @apply inline-flex items-center justify-center px-1.5 py-0.5 text-[10px] font-bold rounded bg-muted text-muted-foreground mr-1;
+  }
+
+  /* Botones de módulos */
+  .module-btn {
+    @apply flex flex-col items-center justify-center gap-1 px-4 py-3 rounded-lg border-2 transition-all duration-200;
+    @apply hover:shadow-md hover:-translate-y-0.5;
+  }
+
+  /* Ticket item */
+  .ticket-item {
+    @apply flex items-center justify-between py-2 px-3 border-b border-border hover:bg-muted/50 transition-colors;
+  }
+
+  /* Input estilo POS */
+  .pos-input {
+    @apply h-12 text-lg font-mono border-2 focus:border-primary focus:ring-2 focus:ring-primary/20;
+  }
+
+  /* Barra de herramientas */
+  .toolbar {
+    @apply flex items-center gap-2 p-2 bg-muted rounded-lg;
+  }
+}
+
+/* Animación para feedback visual */
+@keyframes pulse-success {
+  0%, 100% {
+    box-shadow: 0 0 0 0 hsl(var(--success) / 0.4);
+  }
+  50% {
+    box-shadow: 0 0 0 8px hsl(var(--success) / 0);
+  }
+}
+
+.animate-pulse-success {
+  animation: pulse-success 0.5s ease-out;
+}
+
+/* Scrollbar personalizado */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: hsl(var(--muted));
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: hsl(var(--muted-foreground) / 0.3);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(var(--muted-foreground) / 0.5);
 }
