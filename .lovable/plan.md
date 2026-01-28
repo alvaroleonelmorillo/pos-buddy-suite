@@ -76,4 +76,3 @@ Utilizaremos **Lovable Cloud (Supabase)** para guardar:
 - Múltiples tickets/ventas simultáneas
 - Búsqueda rápida de productos
 - Cálculo automático de cambio
-
